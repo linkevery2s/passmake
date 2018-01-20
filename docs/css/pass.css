@@ -1,0 +1,142 @@
+﻿html,body{
+
+width:100%;
+height:100%;
+margin: 0;
+padding: 0;
+font-family: "Hiragino Kaku Gothic OriN","Meiryo",sans-serif;
+
+}
+
+/*facebook 高さ調整用*/
+	.fb_iframe_widget > span {
+	
+		vertical-align: baseline !important;
+	
+	}
+
+.table	{
+	width:90%;
+	border:2px solid #999; 
+	margin: 0;
+	padding: 10px;
+	margin-bottom:10px;
+	text-align: center;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;	/* Safari,Google Chrome用 */
+	-moz-border-radius: 10px;	/* Firefox用 */
+}
+
+.tr	{
+	width:90%;
+	border: 3px solid #6495ED;
+}
+
+/*facebook 高さ調整用*/
+	.fb_iframe_widget > span {
+	
+		vertical-align: baseline !important;
+	
+	}
+
+#header{
+	position: fixed;
+	width: 100%; 
+	background-color:#0000ff;
+	padding: 10px 0 10px 0;
+	z-index:10;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+li {
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	/*background: linear-gradient(#5882FA, #0040FF);
+	background: -webkit-linear-gradient(#5882FA, #0040FF);
+	background: -moz-linear-gradient(#5882FA, #0040FF);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;	
+	-moz-border-radius: 5px;	Firefox用 */
+	width: 23%;
+}
+.menu {
+	text-align: center;
+}
+.menu li {
+	display: inline-block;
+}
+
+a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #7A7878;
+	text-decoration: none;
+}
+
+.list{
+	display: block;
+}
+
+#fotter{
+position: fixed;
+width: 100%;
+bottom: 0;
+background-color:#0000ff;
+color:#ffffff;
+padding: 0;
+z-index:10;
+text-align: center;
+}
+
+#con_main{
+width:100%;
+height: auto;
+padding: 100px 0 100px 0;
+}
+
+}
+
+#makebutton{
+	background: linear-gradient(#5882FA, #0040FF);
+	background: -webkit-linear-gradient(#5882FA, #0040FF);
+	background: -moz-linear-gradient(#5882FA, #0040FF);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;	/* Safari,Google Chrome用 */
+	-moz-border-radius: 10px;	/* Firefox用 */
+	color: #ffffff;
+	padding: 5px 10px 5px 10px;
+	border-style: none;
+	
+}
+
+.slide {
+	height: 100%;
+	width: 100%;
+}
+
+#fullpage, #section{
+	width: 100%;
+	height: 100%;
+
+}
+
+.panel {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	padding: 50px 0 50px 0;
+	margin: 0;
+
+}
+
+#manual, #sns, #qr, #rule {
+	display: none;
+}
