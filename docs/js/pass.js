@@ -60,33 +60,33 @@ if(vari[0].checked){
 }
 
 function home(){
-$("#manual").hide();
-$("#sns").show();
-$("#rule").hide();
-$("#qr").show();
-$("#main").show();
-}
-
-function manual(){
-$("#main").hide();
 $("#sns").hide();
 $("#rule").hide();
 $("#qr").hide();
-$("#manual").show();
+$("#rss").hide();
+$("#main").show();
 }
 
-function sns(){
+function share(){
 $("#main").hide();
-$("#manual").hide();
+$("#sns").show();
+$("#rss").hide();
+$("#rule").hide();
+$("#qr").show();
+}
+
+function rss(){
+$("#main").hide();
 $("#rule").hide();
 $("#sns").hide();
+$("#rss").show();
 $("#qr").hide();
 }
 
 function rule(){
 $("#main").hide();
-$("#manual").hide();
 $("#sns").hide();
 $("#qr").hide();
+$("#rss").hide();
 $("#rule").show();
 }
