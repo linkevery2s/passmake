@@ -102,7 +102,7 @@
 		<div class = "table tr" id="rss">
 		<center>
 		<div style ="font-size: 20px;">情報発信</div><br>
-		あああ
+		<div id="feed"></div>
 		</center>
 		</div>
 
@@ -161,5 +161,30 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+
+<script type="text/javascript">
+   //読み込み最大記事数
+   var max_length = 5; 
+
+  $(function(){
+    $.getJSON("https://query.yahooapis.com/v1/public/yql?callback=?", {
+      q: "select * from rss where url='https://www.jpcert.or.jp/rss/jpcert.rdf'",
+      format: "json"
+    }, function(json) {
+      for (var i = 0; i < json.query.results.item.length; i++) {
+        if(i == max_length) break;
+
+        var entry = json.query.results.item[i];
+
+        var title = entry.title;//記事タイトル
+        var link = entry.link; //記事へのリンク
+        //タイトルを挿入
+        $('#feed').append("<li><a href='" + link  +"'>"+ title +"</a></li>"); 
+
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
