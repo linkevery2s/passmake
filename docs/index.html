@@ -101,8 +101,11 @@
 
 		<div class = "table tr" id="rss">
 		<center>
-		<div style ="font-size: 20px;">情報発信</div><br>
-		<div id="feed"></div>
+		<div style ="font-size: 20px;">情報発信</div>
+		<div style="text-align:left;">
+		情報セキュリティに関するサービスのRSSを掲載しています。<br><br>
+		JPCERT/CC</div>
+		<div id="feed" style="text-align:left;"></div>
 		</center>
 		</div>
 
@@ -179,7 +182,7 @@
         var title = entry.title;//記事タイトル
         var link = entry.link; //記事へのリンク
         //タイトルを挿入
-        $('#feed').append("<li><a href='" + link  +"'>"+ title +"</a></li>"); 
+        $('#feed').append("<a href='" + link  +"' target='_blank'>"+ title +"</a><br><br>"); 
 
       }
     });

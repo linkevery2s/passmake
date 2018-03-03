@@ -137,10 +137,11 @@ padding: 100px 0 100px 0;
 
 }
 
-#manual, #sns, #qr, #rule {
+#manual, #share, #qr, #rule, #rss {
 	display: none;
 }
 
-#feed{
-	font-color: #000;
+#feed a{
+	width: 100%;
+	color: #000 !important;
 }
