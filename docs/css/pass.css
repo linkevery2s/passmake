@@ -140,3 +140,7 @@ padding: 100px 0 100px 0;
 #manual, #sns, #qr, #rule {
 	display: none;
 }
+
+#feed{
+	font-color: #000;
+}
