@@ -103,9 +103,19 @@
 		<center>
 		<div style ="font-size: 20px;">情報発信</div>
 		<div style="text-align:left;">
-		情報セキュリティに関するサービスのRSSを掲載しています。<br><br>
-		JPCERT/CC</div>
-		<div id="feed" style="text-align:left;"></div>
+		情報セキュリティに関するサービスのRSSを掲載しています。
+		</div>
+
+<script id="_tangan_loader_c518f264f4ddd472b9862002cfe91a35" src="https://tanganrss.com/rsstxt/loader.php?url=https%3A%2F%2Ftanganrss.com%2Frsstxt%2Frsstxt.php%3Fkey%3Dc518f264f4ddd472b9862002cfe91a35&id=c518f264f4ddd472b9862002cfe91a35&target=" type="text/javascript"></script>
+<!--
+姉妹サービス、複眼RSSを宜しくお願いします。
+http://fukugan.com/
+-->
+<!-- 登録内容の復元URL
+https://tanganrss.com/rsstxt/regist.php?key=c518f264f4ddd472b9862002cfe91a35
+-->
+
+
 		</center>
 		</div>
 
@@ -164,30 +174,6 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
-
-<script type="text/javascript">
-   //読み込み最大記事数
-   var max_length = 5; 
-
-  $(function(){
-    $.getJSON("https://query.yahooapis.com/v1/public/yql?callback=?", {
-      q: "select * from rss where url='https://www.jpcert.or.jp/rss/jpcert.rdf'",
-      format: "json"
-    }, function(json) {
-      for (var i = 0; i < json.query.results.item.length; i++) {
-        if(i == max_length) break;
-
-        var entry = json.query.results.item[i];
-
-        var title = entry.title;//記事タイトル
-        var link = entry.link; //記事へのリンク
-        //タイトルを挿入
-        $('#feed').append("<a href='" + link  +"' target='_blank'>"+ title +"</a><br><br>"); 
-
-      }
-    });
-  });
-</script>
 
 </body>
 </html>
